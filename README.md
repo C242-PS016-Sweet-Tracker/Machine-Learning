@@ -131,6 +131,54 @@ print(f"Test Accuracy: {test_accuracy * 100:.2f}%")
 ```
 
 # Nutrition Facts extracting using OCR
+## Overview
+The Nutrition Fact OCR project is designed to extract nutritional information from images of food labels using Optical Character Recognition (OCR) technology. This project leverages machine learning and image processing techniques to provide accurate and efficient extraction of data.
+
+## Features
+- **Image Upload**: Users can upload images of food labels.
+- **OCR Processing**: The application processes the uploaded images to extract text.
+- **Nutritional Information Extraction**: Extracted text is parsed to retrieve nutritional information such as calories, fats, proteins, and sugars.
+- **User-Friendly Interface**: A simple and intuitive interface for users to interact with the application.
+
+## Example Outputs
+Here are some examples of the extracted sugar information from various food labels:
+
+1. **Image 1**: 
+   - **Sugar**: 25g
+   ![Screenshot 2024-12-12 110441](https://github.com/user-attachments/assets/28d468bd-8302-4e29-a5c9-fcfb7613540b)
+
+   
+
+2. **Image 2**: 
+   - **Sugar**: 15g
+   ![Image 2](test%20(8).jpg)
+
+3. **Image 3**: 
+   - **Sugar**: 2g
+   ![Image 3](test%20(1).jpg)
+
+## Requirements
+- Python 3.x
+- Libraries:
+  - `opencv-python`
+  - `pytesseract`
+  - `PIL` (Pillow)
+  - `numpy`
+  - `flask` (if using a web interface)
+
+## Installation
+1. Clone the repository: https://github.com/yourusername/nutrition-fact-ocr.git
+2. Ensure Tesseract OCR is installed on your system. You can download it from [Tesseract OCR](https://github.com/tesseract-ocr/tesseract).
+3. Upload an image of a food label and click on the "Extract" button to retrieve nutritional information.
+   
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+
+## Acknowledgments
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) for the OCR engine.
+- [OpenCV](https://opencv.org/) for image processing capabilities.
+
+
 
 # Food recommendation
 
