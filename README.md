@@ -35,10 +35,70 @@ Processed dataset can be found on this repository directory namely `dataset(proc
 ### Training
 #### Key Components:
 1. **MobileNetV3**: A lightweight convolutional neural network model pre-trained on ImageNet. It is used as the backbone of the model for feature extraction.
-2. **Fine-Tuning**: The pre-trained model is fine-tuned on the food dataset to adapt it to the specific classes in our dataset.
-3. **Data Augmentation**: Random transformations like flip, rotation, and zoom are applied to the training data to prevent overfitting.
-4. **Callbacks**: `EarlyStopping` and `ReduceLROnPlateau` are used during training to optimize performance.
-5. **Store** the model into `.keras`.
+   from tensorflow.keras.applications import MobileNetV3Small
+   ```
+    def create_model():
+      # Load pre-trained MobileNetV3 without the top classification layer
+      base_model = MobileNetV3Small(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+      # ...
+      return model
+   ```
+3. **Fine-Tuning**: The pre-trained model is fine-tuned on the food dataset to adapt it to the specific classes in our dataset.
+   ```
+    def create_model():
+      # Load pre-trained MobileNetV3 ...
+      base_model.trainable = True  # Unfreeze base model layers for fine-tuning
+      # ...
+      return model
+   ```
+5. **Data Augmentation**: Random transformations like flip, rotation, and zoom are applied to the training data to prevent overfitting.
+   ```
+      def train_val_datasets():
+          # ... (dataset creation)
+          data_augmentation = tf.keras.Sequential([
+            tf.keras.layers.RandomFlip("horizontal"),
+            tf.keras.layers.RandomRotation(0.2),
+            tf.keras.layers.RandomZoom(0.1)
+          ])
+          # ... (apply augmentation to training data)
+          return train_dataset, validation_dataset
+   ```
+7. **Callbacks**: `EarlyStopping` and `ReduceLROnPlateau` are used during training to optimize performance.
+   ```
+     early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+     reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=3, min_lr=1e-6)
+      
+     history = model.fit(
+        train_dataset,
+        validation_data=validation_dataset,
+        epochs=20,
+        callbacks=[early_stopping, reduce_lr]
+     )
+   ```
+9. **Store** the model into `.keras`.
+    ```
+    model.save('model_makanan_keras.keras')
+    ```
+### Imported Library
+1. `os`
+    os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0': This line sets an environment variable to disable specific optimizations in TensorFlow. This can be useful for debugging or when encountering performance issues.
+2. `numpy`
+    - Used for various numerical computations, such as array operations, statistical calculations, and more.
+3. `tensorflow`
+    - Defines and trains the neural network model.   
+    - Prepares and processes the image data.   
+    - Evaluates the model's performance.
+4. `matplotlib.pyplot`
+    - Visualizes the training and validation accuracy and loss curves.
+5. `tensorflow.keras.callbacks`
+    - Implements EarlyStopping to halt training if the validation loss doesn't improve.
+    - Implements ReduceLROnPlateau to reduce the learning rate when validation loss plateaus.
+6. `tensorflow.keras.applications`
+    - Loads the MobileNetV3 model as the base model for feature extraction.
+7. `tensorflow.keras.applications.mobilenet_v3`
+    - Provides the preprocess_input function to normalize the input images.
+8. `sklearn.utils.class_weight`
+    - Computes class weights to balance the impact of different classes during training.
 
 ## Nutrition Facts extracting using OCR
 
