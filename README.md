@@ -145,20 +145,22 @@ The main components of the code include:
 ![image](https://github.com/user-attachments/assets/4b875937-821a-454c-94bd-f9515d38b911)
 
 
-1. **Image Upload**: 
+1. **Image Upload**:
+   ![image](https://github.com/user-attachments/assets/f1f961e2-8e4e-4111-9063-39133ee02ef5)
    - The application allows users to upload images of food labels through a web interface. This is typically handled using Flask's file upload capabilities.
 
 2. **OCR Processing**:
+   ![image](https://github.com/user-attachments/assets/b61b9f40-114e-45f4-b626-d8f37f401e3e)
    - The uploaded image is processed using the `pytesseract` library, which converts the image into text. The code uses functions to read the image and apply OCR to extract the text content.
 
-3. **Data Parsing**:
-   - After extracting the text, the code parses the nutritional information. Regular expressions or string manipulation techniques are used to find specific data points, such as sugar content, calories, and other nutritional values.
-
-4. **Display Results**:
+3. **Display Results**:
+    ![Screenshot 2024-12-10 190459](https://github.com/user-attachments/assets/e67c7a1b-8042-4335-918f-af13b433139c)
    - The extracted information is then displayed back to the user in a readable format, showing the relevant nutritional facts.
-
+   
 5. **Error Handling**:
+    ![Screenshot 2024-12-10 190459](https://github.com/user-attachments/assets/c0ad8089-4acd-403c-aa94-0e25ea2012d1)
    - The code includes error handling to manage issues such as unsupported file types or OCR failures, ensuring a smooth user experience.
+    
 
 ## Example Outputs
 Here are some examples of the extracted sugar information from various food labels:
