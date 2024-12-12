@@ -140,6 +140,26 @@ The Nutrition Fact OCR project is designed to extract nutritional information fr
 - **Nutritional Information Extraction**: Extracted text is parsed to retrieve nutritional information such as calories, fats, proteins, and sugars.
 - **User-Friendly Interface**: A simple and intuitive interface for users to interact with the application.
 
+## Code Explanation
+The main components of the code include:
+![image](https://github.com/user-attachments/assets/4b875937-821a-454c-94bd-f9515d38b911)
+
+
+1. **Image Upload**: 
+   - The application allows users to upload images of food labels through a web interface. This is typically handled using Flask's file upload capabilities.
+
+2. **OCR Processing**:
+   - The uploaded image is processed using the `pytesseract` library, which converts the image into text. The code uses functions to read the image and apply OCR to extract the text content.
+
+3. **Data Parsing**:
+   - After extracting the text, the code parses the nutritional information. Regular expressions or string manipulation techniques are used to find specific data points, such as sugar content, calories, and other nutritional values.
+
+4. **Display Results**:
+   - The extracted information is then displayed back to the user in a readable format, showing the relevant nutritional facts.
+
+5. **Error Handling**:
+   - The code includes error handling to manage issues such as unsupported file types or OCR failures, ensuring a smooth user experience.
+
 ## Example Outputs
 Here are some examples of the extracted sugar information from various food labels:
 
