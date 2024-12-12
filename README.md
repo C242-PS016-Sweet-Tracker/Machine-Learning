@@ -2,7 +2,7 @@
 
 ## Features
 - Food-scanner with fine tuned MobileV3 with Tensor Flow
-- Nutrision Facts extracting using OCR
+- Nutrition Facts extracting using OCR
 - Food recommendation
 - Chatbot from Gemini (additional feature)
 
