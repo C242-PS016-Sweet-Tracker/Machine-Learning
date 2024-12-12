@@ -146,8 +146,8 @@ The main components of the code include:
 
 
 1. **Image Upload**:
-   ![image](https://github.com/user-attachments/assets/f1f961e2-8e4e-4111-9063-39133ee02ef5)
    - The application allows users to upload images of food labels through a web interface. This is typically handled using Flask's file upload capabilities.
+     ![image](https://github.com/user-attachments/assets/f1f961e2-8e4e-4111-9063-39133ee02ef5)
 
 2. **OCR Processing**:
    ![image](https://github.com/user-attachments/assets/b61b9f40-114e-45f4-b626-d8f37f401e3e)
