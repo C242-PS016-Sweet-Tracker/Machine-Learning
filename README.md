@@ -150,16 +150,17 @@ The main components of the code include:
      ![image](https://github.com/user-attachments/assets/f1f961e2-8e4e-4111-9063-39133ee02ef5)
 
 2. **OCR Processing**:
-   ![image](https://github.com/user-attachments/assets/b61b9f40-114e-45f4-b626-d8f37f401e3e)
    - The uploaded image is processed using the `pytesseract` library, which converts the image into text. The code uses functions to read the image and apply OCR to extract the text content.
+     ![image](https://github.com/user-attachments/assets/b61b9f40-114e-45f4-b626-d8f37f401e3e)
 
 3. **Display Results**:
-    ![Screenshot 2024-12-10 190459](https://github.com/user-attachments/assets/e67c7a1b-8042-4335-918f-af13b433139c)
    - The extracted information is then displayed back to the user in a readable format, showing the relevant nutritional facts.
+     ![Screenshot 2024-12-10 190459](https://github.com/user-attachments/assets/e67c7a1b-8042-4335-918f-af13b433139c)
    
 5. **Error Handling**:
-    ![Screenshot 2024-12-10 190459](https://github.com/user-attachments/assets/c0ad8089-4acd-403c-aa94-0e25ea2012d1)
    - The code includes error handling to manage issues such as unsupported file types or OCR failures, ensuring a smooth user experience.
+     ![image](https://github.com/user-attachments/assets/95fcfc39-bd87-4e81-9617-cf84ff513dad)
+
     
 
 ## Example Outputs
