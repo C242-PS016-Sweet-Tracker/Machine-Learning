@@ -100,6 +100,36 @@ Processed dataset can be found on this repository directory namely `dataset(proc
 8. `sklearn.utils.class_weight`
     - Computes class weights to balance the impact of different classes during training.
 
+### Structure
+![alt text](https://github.com/C242-PS016-Sweet-Tracker/Machine-Learning/blob/main/food_scan/mdImage/structure.png)
+
+### Training
+![alt_text](https://github.com/C242-PS016-Sweet-Tracker/Machine-Learning/blob/main/food_scan/mdImage/train1.png)
+![alt_text](https://github.com/C242-PS016-Sweet-Tracker/Machine-Learning/blob/main/food_scan/mdImage/train2.png)
+
+### Evaluate
+![alt_text](https://github.com/C242-PS016-Sweet-Tracker/Machine-Learning/blob/main/food_scan/mdImage/evaluate.png)
+
+### Accuracy
+![alt_text](https://github.com/C242-PS016-Sweet-Tracker/Machine-Learning/blob/main/food_scan/mdImage/evaluate_test.png)
+## Accuracy = **95.26%**
+
+## How do we calculate our model's accuracy?
+```
+# Evaluate
+test_dataset = tf.keras.utils.image_dataset_from_directory(
+    directory=TEST_DIR,
+    batch_size=64,
+    image_size=(224, 224),
+    label_mode='categorical'
+)
+
+test_dataset = test_dataset.map(lambda x, y: (preprocess_input(x), y))
+
+test_loss, test_accuracy = model.evaluate(test_dataset)
+print(f"Test Accuracy: {test_accuracy * 100:.2f}%")
+```
+
 # Nutrition Facts extracting using OCR
 
 # Food recommendation
