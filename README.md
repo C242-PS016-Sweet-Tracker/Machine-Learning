@@ -207,12 +207,10 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 # Food recommendation
 ## Overview
-The Nutrition Fact OCR project is designed to extract nutritional information from images of food labels using Optical Character Recognition (OCR) technology. This project leverages machine learning and image processing techniques to provide accurate and efficient extraction of data.
+This script is designed to provide food recommendations tailored for individuals with type 1 and type 2 diabetes. It aims to help users make healthier food choices based on their specific diabetic condition. By using this script, users can easily access personalized dietary suggestions to support their overall well-being.
 
 ## Features
-- **Image Upload**: Users can upload images of food labels.
-- **OCR Processing**: The application processes the uploaded images to extract text.
-- **Nutritional Information Extraction**: Extracted text is parsed to retrieve nutritional information such as calories, fats, proteins, and sugars.
+- **Nutritional Information**: Nutritional information such as calories, fats, proteins, and sugars.
 - **User-Friendly Interface**: A simple and intuitive interface for users to interact with the application.
 
 ## Code Explanation
