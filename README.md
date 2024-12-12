@@ -215,6 +215,7 @@ This script is designed to provide food recommendations tailored for individuals
 
 ## Code Explanation
 The main components of the code include:
+
 ![image](https://github.com/user-attachments/assets/5cea1d0d-1e3d-4e36-ac96-e205bc4be9d9)
 
 
