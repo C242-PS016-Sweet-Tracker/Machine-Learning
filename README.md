@@ -214,15 +214,18 @@ This script is designed to provide food recommendations tailored for individuals
 
 ## Code Explanation
 The main components of the code include:
+
 ![Desain tanpa judul](https://github.com/user-attachments/assets/04f5fd95-cdac-48a4-a77f-3d2054c30594)
 
 
 
 
 1. **Dataset**:
+   
      ![image](https://github.com/user-attachments/assets/5cea1d0d-1e3d-4e36-ac96-e205bc4be9d9)
 
 2. **Recomendation Processing**:
+   
      ![image](https://github.com/user-attachments/assets/5c418967-49c7-4f12-8677-abafa4b5ca18)
 
     
@@ -232,12 +235,14 @@ Here are some examples of the recomendation food information from dataset:
 
 1. **Image 1**: 
    - **Diabetes tipe 1**
+
    ![image](https://github.com/user-attachments/assets/e97031a1-0ae1-4854-9fb3-da7e0af56646)
 
 
 
 2. **Image 2**: 
    - **Diabetes tipe 2**
+
    ![Screenshot 2024-12-12 224718](https://github.com/user-attachments/assets/5c4cd374-e6b1-4d9b-89d2-3df8360d2148)
 
 
