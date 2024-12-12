@@ -185,7 +185,6 @@ Here are some examples of the extracted sugar information from various food labe
 ## Requirements
 - Python 3.x
 - Libraries:
-  - `opencv-python`
   - `pytesseract`
   - `PIL` (Pillow)
   - `numpy`
@@ -215,73 +214,48 @@ This script is designed to provide food recommendations tailored for individuals
 
 ## Code Explanation
 The main components of the code include:
-
-![image](https://github.com/user-attachments/assets/5cea1d0d-1e3d-4e36-ac96-e205bc4be9d9)
-
-![image](https://github.com/user-attachments/assets/5c418967-49c7-4f12-8677-abafa4b5ca18)
-
 ![Desain tanpa judul](https://github.com/user-attachments/assets/04f5fd95-cdac-48a4-a77f-3d2054c30594)
 
 
 
 
-1. **Image Upload**:
-   - The application allows users to upload images of food labels through a web interface. This is typically handled using Flask's file upload capabilities.
-     ![image](https://github.com/user-attachments/assets/f1f961e2-8e4e-4111-9063-39133ee02ef5)
+1. **Dataset**:
+     ![image](https://github.com/user-attachments/assets/5cea1d0d-1e3d-4e36-ac96-e205bc4be9d9)
 
-2. **OCR Processing**:
-   - The uploaded image is processed using the `pytesseract` library, which converts the image into text. The code uses functions to read the image and apply OCR to extract the text content.
-     ![image](https://github.com/user-attachments/assets/b61b9f40-114e-45f4-b626-d8f37f401e3e)
-
-3. **Display Results**:
-   - The extracted information is then displayed back to the user in a readable format, showing the relevant nutritional facts.
-     ![Screenshot 2024-12-10 190459](https://github.com/user-attachments/assets/e67c7a1b-8042-4335-918f-af13b433139c)
-   
-5. **Error Handling**:
-   - The code includes error handling to manage issues such as unsupported file types or OCR failures, ensuring a smooth user experience.
-     ![image](https://github.com/user-attachments/assets/95fcfc39-bd87-4e81-9617-cf84ff513dad)
+2. **Recomendation Processing**:
+     ![image](https://github.com/user-attachments/assets/5c418967-49c7-4f12-8677-abafa4b5ca18)
 
     
 
 ## Example Outputs
-Here are some examples of the extracted sugar information from various food labels:
+Here are some examples of the recomendation food information from dataset:
 
 1. **Image 1**: 
-   - **Sugar**: 25g
-   ![Screenshot 2024-12-12 110441](https://github.com/user-attachments/assets/28d468bd-8302-4e29-a5c9-fcfb7613540b)
+   - **Diabetes tipe 1**
+   ![image](https://github.com/user-attachments/assets/e97031a1-0ae1-4854-9fb3-da7e0af56646)
 
-   
+
 
 2. **Image 2**: 
-   - **Sugar**: 15g
-![Screenshot 2024-12-12 110500](https://github.com/user-attachments/assets/a8d448a1-5c74-4010-9652-3e373a6ffd9e)
+   - **Diabetes tipe 2**
+   ![Screenshot 2024-12-12 224718](https://github.com/user-attachments/assets/5c4cd374-e6b1-4d9b-89d2-3df8360d2148)
 
 
-3. **Image 3**: 
-   - **Sugar**: 2g
-![Screenshot 2024-12-12 110417](https://github.com/user-attachments/assets/0e08758d-dc20-4eba-a38b-15cfed9b8e06)
+
 
 
 ## Requirements
 - Python 3.x
 - Libraries:
-  - `opencv-python`
-  - `pytesseract`
-  - `PIL` (Pillow)
-  - `numpy`
-  - `flask` (if using a web interface)
+  - `pandas`
+
 
 ## Installation
-1. Clone the repository: https://github.com/yourusername/nutrition-fact-ocr.git
-2. Ensure Tesseract OCR is installed on your system. You can download it from [Tesseract OCR](https://github.com/tesseract-ocr/tesseract).
-3. Upload an image of a food label and click on the "Extract" button to retrieve nutritional information.
+1. Clone the repository: https://github.com/yourusername/recomendation-food.git
+2. Input diabetes type 1 or 2, and the food recommendations will appear.
    
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
-
-## Acknowledgments
-- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) for the OCR engine.
-- [OpenCV](https://opencv.org/) for image processing capabilities.
 
 
 # Chatbot from Gemini (additional feature)
