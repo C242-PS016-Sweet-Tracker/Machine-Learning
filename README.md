@@ -151,11 +151,13 @@ Here are some examples of the extracted sugar information from various food labe
 
 2. **Image 2**: 
    - **Sugar**: 15g
-   ![Image 2](test%20(8).jpg)
+![Screenshot 2024-12-12 110500](https://github.com/user-attachments/assets/a8d448a1-5c74-4010-9652-3e373a6ffd9e)
+
 
 3. **Image 3**: 
    - **Sugar**: 2g
-   ![Image 3](test%20(1).jpg)
+![Screenshot 2024-12-12 110417](https://github.com/user-attachments/assets/0e08758d-dc20-4eba-a38b-15cfed9b8e06)
+
 
 ## Requirements
 - Python 3.x
