@@ -42,7 +42,7 @@ Processed dataset can be found on this repository directory namely `dataset(proc
 
 ## Nutrition Facts extracting using OCR
 
-### Food recommendation
+## Food recommendation
 
-### Chatbot from Gemini (additional feature)
+## Chatbot from Gemini (additional feature)
 We are using Gemini as chatbot for only additional feature, the API and the feature made by our team's Mobile Development and Cloud Computing division.
